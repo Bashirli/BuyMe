@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeRefreshLayoutOther"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.OtherFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+          android:id="@+id/otherLinearLayout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:text="@string/moodup"
+              android:textColor="@color/white"
+              android:textSize="35dp"
+              android:textStyle="bold">
+
+          </TextView>
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/recyclerOther"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+          </androidx.recyclerview.widget.RecyclerView>
+
+      </LinearLayout>
+
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:id="@+id/otherProgressBar"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="@+id/otherLinearLayout"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+      </ProgressBar>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

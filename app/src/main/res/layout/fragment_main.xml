@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    tools:context=".view.fragment.MainFragment"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/myLocation"
+            android:layout_width="40dp"
+            android:src="@drawable/mylocationico"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_weight="0.5"
+            android:textStyle="bold">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:src="@drawable/searchico"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorColor="#970000"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorAnimationMode="elastic"
+            android:background="#171717"
+            >
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:text="@string/equipment"
+                android:layout_height="match_parent">
+
+            </com.google.android.material.tabs.TabItem>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:text="@string/other"
+
+                android:layout_height="match_parent">
+
+            </com.google.android.material.tabs.TabItem>
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:id="@+id/viewPager2"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="-81dp"></androidx.viewpager2.widget.ViewPager2>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

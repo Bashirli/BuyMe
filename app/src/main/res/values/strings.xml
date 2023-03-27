@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">BuyMe</string>
+    <string name="equipment">Equipment</string>
+    <string name="other">Other</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="topEquip">OMG!</string>
+    <string name="shuffle">Shuffle Up</string>
+    <string name="moodup">Mood Up!</string>
+    <string name="addtocart">Add to cart</string>
+    <string name="actualprice">Actual price</string>
+    <string name="maxProduct">Maximum number of product is 20</string>
+    <string name="permission">Permission required for location!</string>
+    <string name="givePer">Give permission</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="OK">OK</string>
+    <string name="locationAsk">Do you want to give permission for location access?</string>
+    <string name="cont">Continue</string>
+    <string name="attention">Attention!</string>
+    <string name="checkout">Checkout</string>
+    <string name="paymentCat">Payment options</string>
+    <string name="card">Credit/Debit card</string>
+    <string name="cash">Cash on delivery</string>
+    <string name="confirmPayment">Slide to confirm payment</string>
+    <string name="searchSmth">Search something...</string>
+    <string name="addSuc">Product added to cart successfully!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sucpurchase">Your purchase</string>
+    <string name="favorites">Favorites</string>
+    <string name="selectedLoc">Selected location</string>
+    <string name="nameOfPlace">Name of place</string>
+    <string name="save">Save</string>
+    <string name="empty">Fill the field</string>
+
+</resources>
